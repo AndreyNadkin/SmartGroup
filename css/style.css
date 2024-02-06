@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    --color-white: #f3f1f6;
+    --color-burgundy: #7e2b2e;
+    --color-burgundy-hover: #A05255;
+    --font-karla: 17px 'Karla', sans-serif;
+    --font-karla-bold: bold 17px 'Karla', sans-serif;
+    --font-montserrat: 12px 'Montserrat', sans-serif;
+    --font-rubik-24: bold 24px 'Rubik', sans-serif;
+    --font-rubik-28: bold 28px 'Rubik', sans-serif;
+    --font-rubik-36: bold 36px 'Rubik', sans-serif;
+    --font-rubik-39: bold 39px 'Rubik', sans-serif;
+
+}
+
+
 body {
     background: #9c9999;
 }
@@ -6,12 +23,24 @@ header {
     display: flex;
     justify-content: space-between;
     flex-flow: row nowrap;
-}
-
-#headerMenu {
     
 }
 
-#consultation {
- /* margin-left: 5em ; */
+#headerMenu a {
+    text-decoration: none;
+    color: var(--color-white);
+    font: var(--font-karla)
+}
+
+#burgundyButton {
+    /* margin-left: 5em ; */
+    background: var(--color-burgundy);
+    font: var(--font-montserrat);
+    color: var(--color-white);
+    padding: 15px 30px;
+    /* margin: 0; */
+}
+#burgundyButton:hover {
+    /* margin-left: 5em ; */
+    background: var(--color-burgundy-hover);
 }
