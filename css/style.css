@@ -1,0 +1,17 @@
+body {
+    background: #9c9999;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+#headerMenu {
+    
+}
+
+#consultation {
+ /* margin-left: 5em ; */
+}
