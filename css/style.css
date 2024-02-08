@@ -6,33 +6,39 @@
     --color-burgundy-hover: #A05255;
     --font-karla: 17px 'Karla', sans-serif;
     --font-karla-bold: bold 17px 'Karla', sans-serif;
-    --font-montserrat: 12px 'Montserrat', sans-serif;
+    --font-montserrat: 14px 'Montserrat', sans-serif;
     --font-rubik-24: bold 24px 'Rubik', sans-serif;
     --font-rubik-28: bold 28px 'Rubik', sans-serif;
     --font-rubik-36: bold 36px 'Rubik', sans-serif;
     --font-rubik-39: bold 39px 'Rubik', sans-serif;
+    --font-rubik-50: bold 50px 'Rubik', sans-serif;
 
 }
 
-
-body {
-    background: #9c9999;
-}
-
+/*------------------------header */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-flow: row nowrap;
-    
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+#SGLogo {
+    /* box-sizing: inherit; */
 }
 
 #headerMenu a {
     text-decoration: none;
     color: var(--color-white);
-    font: var(--font-karla)
+    font: var(--font-karla);
+    padding: 0 17px;
 }
 
-#burgundyButton {
+
+
+.burgundyButton {
     /* margin-left: 5em ; */
     background: var(--color-burgundy);
     font: var(--font-montserrat);
@@ -40,7 +46,103 @@ header {
     padding: 15px 30px;
     /* margin: 0; */
 }
-#burgundyButton:hover {
+.burgundyButton:hover {
     /* margin-left: 5em ; */
     background: var(--color-burgundy-hover);
 }
+
+#consultation {
+    margin-left: 10px;
+}
+
+
+
+ /*--------------------------- header */    
+
+
+/*-----------------------------body*/
+body {
+    background-image: url('/images/background.jpeg');
+    background-position: center;
+    background-size: cover;
+    font: var(--font-karla);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* ----------------------headContainer */
+.headContainer {
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#firstParagraph {
+    font: var(--font-rubik-28);
+}
+#secondParagraph {
+    font: var(--font-rubik-50);
+}
+#thirdParagraph {
+    font: var(--font-karla);
+}
+
+#buttonsBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tranparentButton {
+    font: var(--font-montserrat);
+    /* opacity: 0; */
+    background-color: #02010100;
+    border: 2px solid var(--color-white);
+    padding: 16px 40px;
+    color: var(--color-white);
+
+}
+.whiteButton {
+    font: var(--font-montserrat);
+    color: var(--color-burgundy);
+    padding: 16px 40px;
+}
+
+/* ----------------------headContainer */
+
+/* --------------------------catalog */
+.catalog{
+    background: var(--color-white);
+    width: 100%;
+}
+
+#setsHead {
+    font: var(--font-rubik-39);
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+
+
+/* --------------------------catalog */
+
+
+
+
+
+
+/* ---------------------------body */
+              
+
+/* -------------------------footer   */
+
+
+
+
+/* ------------------------ footer   */
