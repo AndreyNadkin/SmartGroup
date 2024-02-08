@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap');
 
 :root {
-    --color-white: #f3f1f6;
     --color-burgundy: #7e2b2e;
     --color-burgundy-hover: #A05255;
+    --color-white: #ffffff;
     --font-karla: 17px 'Karla', sans-serif;
     --font-karla-bold: bold 17px 'Karla', sans-serif;
     --font-montserrat: 14px 'Montserrat', sans-serif;
@@ -15,7 +15,11 @@
 
 }
 
-/*------------------------header */
+a{
+    text-decoration: none;
+}
+
+/*------------------------------------------------------header */
 header {
     display: flex;
     justify-content: space-between;
@@ -30,8 +34,7 @@ header {
 }
 
 #headerMenu a {
-    text-decoration: none;
-    color: var(--color-white);
+    /* text-decoration: none; */
     font: var(--font-karla);
     padding: 0 17px;
 }
@@ -42,8 +45,8 @@ header {
     /* margin-left: 5em ; */
     background: var(--color-burgundy);
     font: var(--font-montserrat);
-    color: var(--color-white);
     padding: 15px 30px;
+    font-size: 106%;
     /* margin: 0; */
 }
 .burgundyButton:hover {
@@ -57,10 +60,10 @@ header {
 
 
 
- /*--------------------------- header */    
+ /*-----------------------------------------------------header */    
 
 
-/*-----------------------------body*/
+/*------------------------------------------------------body*/
 body {
     background-image: url('/images/background.jpeg');
     background-position: center;
@@ -70,12 +73,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    text-align: center;
+}
+/* ------------------------------------content */
+.content{
+    background: var(--color-white);
 }
 
-/* ----------------------headContainer */
+/* ---------------------headContainer */
 .headContainer {
-    color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,9 +107,7 @@ body {
     font: var(--font-montserrat);
     /* opacity: 0; */
     background-color: #02010100;
-    border: 2px solid var(--color-white);
     padding: 16px 40px;
-    color: var(--color-white);
 
 }
 .whiteButton {
@@ -112,11 +116,10 @@ body {
     padding: 16px 40px;
 }
 
-/* ----------------------headContainer */
+/* -------------------------headContainer */
 
-/* --------------------------catalog */
+/* -------------------------catalog */
 .catalog{
-    background: var(--color-white);
     width: 100%;
 }
 
@@ -126,23 +129,70 @@ body {
     margin-top: 100px;
 }
 
+.sets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);    
+    gap: 2em;
+    grid-template-rows: auto 25%;
+}
+
+.set {
+
+}
+
+.set a{
+    font: var(--font-rubik-28);
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+    /* box-sizing: border-box; */
+}
+
+#set1 {
+    background-image: url(http://placehold.it/340x328/33bee5&text=smartlanding);
+}
+#set2 {
+    background-image: url(http://placehold.it/340x328/33bee5&text=smartlanding);
+}
+#set3 {
+    background-image: url(http://placehold.it/340x328/33bee5&text=smartlanding);
+}
 
 
 
 
-/* --------------------------catalog */
+
+
+/* -------------------------catalog */
+
+/* ----------------------------fidgital */
+.fidgital {
+
+}
+
+#fidgitalTitle{
+    color: black;
+    font: var(--font-rubik-39)
+}
 
 
 
 
+/* ----------------------------fidgital */
 
 
-/* ---------------------------body */
+
+/* ------------------------------------content */
+
+/* ------------------------------------------------------body */
               
 
-/* -------------------------footer   */
+/* -----------------------------------------------------footer*/
 
 
 
 
-/* ------------------------ footer   */
+/* ----------------------------------------------------footer*/
