@@ -120,7 +120,7 @@ body {
     width: 100%;
 }
 
-#setsHead {
+.setsHead {
     font: var(--font-rubik-39);
     text-align: center;
     margin-top: 100px;
