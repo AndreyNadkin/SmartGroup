@@ -4,6 +4,7 @@
     --color-burgundy: #7e2b2e;
     --color-burgundy-hover: #A05255;
     --color-white: #ffffff;
+    --color-purple: #584d66;
     --font-karla: 17px 'Karla', sans-serif;
     --font-karla-bold: bold 17px 'Karla', sans-serif;
     --font-montserrat: 14px 'Montserrat', sans-serif;
@@ -17,6 +18,7 @@
 
 a{
     text-decoration: none;
+    color: var(--color-white);
 }
 
 /*------------------------------------------------------header */
@@ -25,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-flow: row nowrap;
-    padding: 0 20px;
+    padding: 17px 0;
     margin: 0 auto;
 }
 
@@ -33,10 +35,18 @@ header {
     /* box-sizing: inherit; */
 }
 
-#headerMenu a {
+.headerMenu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.headerMenu a {
     /* text-decoration: none; */
     font: var(--font-karla);
-    padding: 0 17px;
+    padding: 0 10px;
+    height: 100%;
 }
 
 
@@ -44,6 +54,7 @@ header {
 .burgundyButton {
     /* margin-left: 5em ; */
     background: var(--color-burgundy);
+    color: var(--color-white);
     font: var(--font-montserrat);
     padding: 15px 30px;
     font-size: 106%;
@@ -74,10 +85,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-/* ------------------------------------content */
-.content{
-    background: var(--color-white);
+  
+    
 }
 
 /* ---------------------headContainer */
@@ -86,6 +95,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--color-white);
+}
+
+.headContainer p{
+    margin: 0 0 20px 0;
 }
 
 #firstParagraph {
@@ -93,15 +107,17 @@ body {
 }
 #secondParagraph {
     font: var(--font-rubik-50);
+    /* font-size: 3rem; */
 }
 #thirdParagraph {
     font: var(--font-karla);
 }
 
-#buttonsBlock {
+.headButtons {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 .tranparentButton {
     font: var(--font-montserrat);
@@ -118,6 +134,18 @@ body {
 
 /* -------------------------headContainer */
 
+
+
+/* ------------------------------------content */
+.content{
+    background: var(--color-white);
+    width: 100%;
+    /* margin: 0;  
+    padding: 0; */
+}
+
+
+
 /* -------------------------catalog */
 .catalog{
     width: 100%;
@@ -132,18 +160,23 @@ body {
 .sets{
     display: grid;
     grid-template-columns: repeat(3,1fr);    
-    gap: 2em;
+    gap: 1em 2em;
     grid-template-rows: auto 25%;
+    box-sizing: border-box;
+    margin: 50px 4em;
+    justify-content: center;
 }
 
 .set {
+    text-align: center;
 
 }
 
 .set a{
     font: var(--font-rubik-28);
-    width: 100%;
-    height: 100%;
+    color: var(--color-white);
+    /* width: 100%;
+    height: 100%; */
     /* display: flex; */
     /* align-items: center;
     justify-content: center; */
@@ -178,8 +211,36 @@ body {
     font: var(--font-rubik-39)
 }
 
+.fidgital p{
+    text-align: justify;
+    padding: 0 5em;
+    color: var(--color-purple);
+    line-height: 1.5;
+}
 
+.zona {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
 
+#zona1{
+    background-image: url(http://placehold.it/340x328/33bee5&text=smartlanding);
+}
+#zona2 {
+    background-image: url(http://placehold.it/340x328/33bee5&text=smartlanding);
+}
+#zona3 {
+    background-image: url(http://placehold.it/340x328/33bee5&text=smartlanding);
+}
+
+.fidgitalButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
 
 /* ----------------------------fidgital */
 
