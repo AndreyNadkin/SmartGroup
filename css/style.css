@@ -22,13 +22,19 @@ a{
 }
 
 button{
-    transition: all 1s ease;
+    transition: all 500ms ease;
     color: var(--color-white);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1;
 }
+
+h2{
+    font: var(--font-rubik-36);
+    color: #150e1f  ;
+}
+
 /*------------------------------------------------------header */
 header {
     display: flex;
