@@ -7,7 +7,7 @@
     --color-purple: #584d66;
     --font-karla: 17px 'Karla', sans-serif;
     --font-karla-bold: bold 17px 'Karla', sans-serif;
-    --font-montserrat: 14px 'Montserrat', sans-serif;
+    --font-montserrat: 12px 'Montserrat', sans-serif;
     --font-rubik-24: bold 24px 'Rubik', sans-serif;
     --font-rubik-28: bold 28px 'Rubik', sans-serif;
     --font-rubik-36: bold 36px 'Rubik', sans-serif;
@@ -21,6 +21,14 @@ a{
     color: var(--color-white);
 }
 
+button{
+    transition: all 1s ease;
+    color: var(--color-white);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+}
 /*------------------------------------------------------header */
 header {
     display: flex;
@@ -57,7 +65,7 @@ header {
     color: var(--color-white);
     font: var(--font-montserrat);
     padding: 15px 30px;
-    font-size: 106%;
+    /* font-size: 106%; */
     /* margin: 0; */
 }
 .burgundyButton:hover {
@@ -119,17 +127,30 @@ body {
     justify-content: center;
     gap: 20px;
 }
+
 .tranparentButton {
     font: var(--font-montserrat);
     /* opacity: 0; */
     background-color: #02010100;
     padding: 16px 40px;
-
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
 }
+.tranparentButton:hover {
+    background: var(--color-burgundy);
+    border: 2px solid var(--color-burgundy);
+}
+
 .whiteButton {
     font: var(--font-montserrat);
     color: var(--color-burgundy);
     padding: 16px 40px;
+    border: 2px solid var(--color-white);
+}
+.whiteButton:hover {
+    background: var(--color-burgundy);
+    border: 2px solid var(--color-burgundy);
+    color: var(--color-white);
 }
 
 /* -------------------------headContainer */
@@ -140,8 +161,8 @@ body {
 .content{
     background: var(--color-white);
     width: 100%;
-    /* margin: 0;  
-    padding: 0; */
+    padding: 0 5em;
+
 }
 
 
@@ -165,6 +186,7 @@ body {
     box-sizing: border-box;
     margin: 50px 4em;
     justify-content: center;
+    
 }
 
 .set {
@@ -203,7 +225,7 @@ body {
 
 /* ----------------------------fidgital */
 .fidgital {
-
+    padding: 0 5em;
 }
 
 #fidgitalTitle{
@@ -242,11 +264,67 @@ body {
     margin: 20px 0;
 }
 
-/* ----------------------------fidgital */
+/* --------------------------fidgital */
+
+/* ---------------------------advantages */
+.advantages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+    padding: 10px;
+}  
+
+.advantages *{
+    padding: 10px;
+}
+
+#advantage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* box-sizing: border-box; */
+
+}
+
+#check{
+    width: 11.777%;
+    height: auto;
+}
 
 
 
-/* ------------------------------------content */
+
+
+
+
+/* --------------------------advantages */
+
+
+/* ----------------------------------------content */
+
+/* ------------------------------------consultation */
+.consultation{
+    display: flex;
+    color: var(--color-white);
+    flex-direction: column;
+}
+
+.consultation h2{
+    font: var(--font-rubik-36);
+    color: var(--color-white);
+}
+
+
+
+
+/* ------------------------------------consultation */
+
+
+/* ----------------------------------------content */
+
+/* ----------------------------------------content */
+
 
 /* ------------------------------------------------------body */
               
