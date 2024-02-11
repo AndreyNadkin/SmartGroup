@@ -1,9 +1,11 @@
 /* Slider */
-.slick-slider
+.slider
 {
     position: relative;
-
+    padding: 0 5em;
     display: block;
+    /* justify-content: center; */
+    /* align-items: center; */
     box-sizing: border-box;
 
     -webkit-user-select: none;
