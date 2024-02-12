@@ -29,13 +29,14 @@ p{
     line-height: 1.5;
 }
 
-button{
+* button {
     transition: all 500ms ease;
     color: var(--color-white);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 1;
+    padding: 16px 40px; 
 }
 
 h2{
@@ -45,16 +46,25 @@ h2{
 
 /*------------------------------------------------------header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row nowrap;
+ 
+    background: url('/images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     padding: 17px 0;
-    margin: 0 auto;
 }
 
 #SGLogo {
     /* box-sizing: inherit; */
+}
+
+.headContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 17px 4em;
+    margin: 0 auto;
 }
 
 .headerMenu{
@@ -92,37 +102,19 @@ header {
     margin-left: 10px;
 }
 
-
-
- /*-----------------------------------------------------header */    
-
-
-/*------------------------------------------------------body*/
-body {
-    background-image: url('/images/background.jpeg');
-    background-position: center center ;
-    background-size: cover;
-    font: var(--font-karla);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-    
-}
-
-/* ---------------------headContainer */
-.headContainer {
+/* ---------------------headText */
+.headText {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: var(--color-white);
+    margin-bottom: 100px;   
 }
 
-.headContainer p{
+.headText p{
     margin: 0 0 20px 0;
+    color: var(--color-white);
 }
 
 #firstParagraph {
@@ -169,6 +161,28 @@ body {
 }
 
 /* -------------------------headContainer */
+
+
+
+
+ /*-----------------------------------------------------header */    
+
+
+/*------------------------------------------------------body*/
+body {
+   
+    font: var(--font-karla);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+
+
 
 
 
@@ -353,13 +367,52 @@ body {
 /* ----------------------------------------content */
 
 /* ------------------------------about  */
-.about{
 
-
+.aboutCompany{
+    /* padding: 0 4em; */
 
 }
 
+.statistics{
+    display: flex;
+    justify-content: center;
+ 
+    /* margin: 0 auto; */
 
+}
+
+#stat{
+    padding: 10px;
+}
+
+#stat h2{
+  /* text-align: center; */
+}
+#stat p{
+  /* text-align: center; */
+}
+
+.aboutList{
+    padding: 0 4em;
+    /* display: grid; */
+ 
+}
+#aboutListItem1{
+    display: flex;
+    
+
+}
+#aboutListItem2{
+    display: flex;
+}
+#aboutListItem1 img{
+    width: 8%;
+    height: 100%; 
+}
+#aboutListItem2 img{
+    width: 8%;
+    height: 100%; 
+}
 /* --------------------------------about  */
 
 /* ------------------------------qrCodes */
