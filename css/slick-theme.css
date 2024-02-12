@@ -7,7 +7,7 @@
 
 /* Icons */
     background: #fff url('./ajax-loader.gif') center center no-repeat;
-* {
+ {
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
@@ -24,9 +24,8 @@
 
     position: absolute;
     top: 50%;
-    /* z-index: 10; */
-    display: block;
-    z-index: 10;
+    display: inline-flex;
+    z-index: 1;
     width: 25px;
     height: 25px;
     padding: 0;
@@ -79,11 +78,12 @@
 
 .slick-prev
 {
-    left: 25px;
+    left: 0;
+    box-sizing: border-box;
     /* content: '\e87d'; */
     /* z-index: 10; */
     background: url('/images/leftarrow_121320.svg') 0 0 / 100% no-repeat;
-    color: #EFEFEF;
+    /* color: #dedddd; */
 
 }
 [dir='rtl'] .slick-prev
@@ -103,7 +103,8 @@
 
 .slick-next
 {
-    right: 25px;
+    right: 00;
+    /* z-index: 10; */
     background: url('/images/rightarrow_121279.svg') 0 0 / 100% no-repeat;
 }
 [dir='rtl'] .slick-next
@@ -185,7 +186,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 20px;
     line-height: 20px;
 
     position: absolute;

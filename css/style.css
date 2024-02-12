@@ -21,6 +21,14 @@ a{
     color: var(--color-white);
 }
 
+p{
+    text-align: left;
+    color: var(--color-purple);
+    font: var(--font-karla);
+    margin-bottom: 1.6em;
+    line-height: 1.5;
+}
+
 button{
     transition: all 500ms ease;
     color: var(--color-white);
@@ -71,6 +79,7 @@ header {
     color: var(--color-white);
     font: var(--font-montserrat);
     padding: 15px 30px;
+    border: var(--color-burgundy);
     /* font-size: 106%; */
     /* margin: 0; */
 }
@@ -91,7 +100,7 @@ header {
 /*------------------------------------------------------body*/
 body {
     background-image: url('/images/background.jpeg');
-    background-position: center;
+    background-position: center center ;
     background-size: cover;
     font: var(--font-karla);
     display: flex;
@@ -99,7 +108,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-  
+    
     
 }
 
@@ -167,10 +176,13 @@ body {
 .content{
     background: var(--color-white);
     width: 100%;
-    padding: 0 5em;
+    /* padding: 0 5em; */
 
 }
 
+.content *{
+    padding: 0 4em;
+}
 
 
 /* -------------------------catalog */
@@ -231,7 +243,7 @@ body {
 
 /* ----------------------------fidgital */
 .fidgital {
-    padding: 0 5em;
+    /* padding: 0 5em; */
 }
 
 #fidgitalTitle{
@@ -241,7 +253,7 @@ body {
 
 .fidgital p{
     text-align: justify;
-    padding: 0 5em;
+    /* padding: 0 5em; */
     color: var(--color-purple);
     line-height: 1.5;
 }
@@ -300,11 +312,9 @@ body {
 
 
 
-
-
-
-
 /* --------------------------advantages */
+
+
 
 
 /* ----------------------------------------content */
@@ -314,11 +324,24 @@ body {
     display: flex;
     color: var(--color-white);
     flex-direction: column;
+    margin: 150px 500px;
+    line-height: 1;
 }
 
 .consultation h2{
     font: var(--font-rubik-36);
     color: var(--color-white);
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.consultation p{
+    color: var(--color-white);
+    font: var(--font-karla);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    line-height: 1;
 }
 
 
@@ -329,7 +352,76 @@ body {
 
 /* ----------------------------------------content */
 
+/* ------------------------------about  */
+.about{
+
+
+
+}
+
+
+/* --------------------------------about  */
+
+/* ------------------------------qrCodes */
+
+.qrCodes{
+
+
+    
+}
+
+
+
+/* ------------------------------qrCodes */
+
+
+
+/* ----------------------------brands */
+.brands{
+    /* padding: 0 5em; */
+}
+
+
+
+/* ----------------------------brands */
+
+/* ------------------------------feedbackForm */
+.feedbackForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 0 5em; */
+    font: var(--font-karla);
+    color: var(--color-purple);
+}
+
+.feedbackForm input, #textarea{
+    width: 100%;
+    height: 100%;  
+    margin: 10px 0;
+    padding: 0.75em;    
+    font: var(--font-karla);
+}
+
+
+.form-check{
+    float: left;
+
+}
+.form-check a{
+    text-decoration: none;
+    color: #020101;
+}
+.form-check a :hover{
+    color: #32a44b;
+}
+
+/* ------------------------------feedbackForm */
+
 /* ----------------------------------------content */
+
+
 
 
 /* ------------------------------------------------------body */
